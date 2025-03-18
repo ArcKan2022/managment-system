@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url('./AgencyFB.ttf') format('truetype'); /* Ensure you have this file */
+}
+
+body {
+    background: url('./paper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Stack header and content */
+    align-items: center;
+    justify-content: flex-end; /* Move everything to the bottom */
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* Move header to the top only for Admin Dashboard */
+.admin-dashboard h1 {
+    font-family: 'UnifrakturCook', cursive; /* Old English */
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    top: 5%; /* Moves header to the top */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Center the rest of the content with blur effect */
+.content-container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px); /* Increased blur effect */
+    -webkit-backdrop-filter: blur(20px);
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
+}
+
+p, body {
+    font-family: 'Agency FB', sans-serif; /* Agency FB */
+    color: #f0f0f0;
+    font-size: 1.2em;
+}
+
+/* Button Styling */
+.button {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    backdrop-filter: blur(10px); /* Added blur effect to buttons */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}

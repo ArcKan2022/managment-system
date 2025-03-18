@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="admin-title">Admin Dashboard</h1>
+
+    <div class="admin-content">
+        <a href="index.html">Logout</a>
+
+        <h2>Upload .ggpkg Files</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" accept=".ggpkg" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        <h2>Uploaded Files</h2>
+        <ul id="fileList"></ul>
+
+        <h2>Personnel Records</h2>
+        <table border="1" id="personnelTable">
+            <thead>
+                <tr>
+                    <th>SNO</th>
+                    <th>Name</th>
+                    <th>Platoon</th>
+                    <th>Course</th>
+                    <th>Grade</th>
+                    <th>File</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Add Personnel</h2>
+        <form id="addPersonnelForm">
+            <input type="number" id="sno" placeholder="SNO" required>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="platoon" placeholder="Platoon" required>
+            <input type="text" id="course" placeholder="Course" required>
+            <input type="text" id="grade" placeholder="Grade" required>
+            <button type="submit">Add Personnel</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

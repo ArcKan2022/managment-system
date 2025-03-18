@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    background: url('./paper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* Admin Dashboard Title */
+.admin-title {
+    font-family: 'UnifrakturCook', cursive;
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* User Dashboard Title */
+.user-title {
+    font-family: 'UnifrakturCook', cursive;
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Admin & User Content */
+.admin-content, .user-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
